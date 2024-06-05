@@ -1,0 +1,15 @@
+.one{
+    border: 2px solid black;
+    border-radius: 5px ;
+    background-color: rgb(238, 113, 113);
+}
+.two{
+    border: 2px solid black;
+    border-radius: 5px ;
+    background-color:rgb(92, 222, 92);
+}
+.three{
+    border: 2px solid black;
+    border-radius: 5px ;
+    background-color:rgb(120, 120, 241);
+}
