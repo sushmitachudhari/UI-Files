@@ -1,0 +1,277 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.page{
+    border: 1px solid black;
+    width: 80%;
+    min-height: 200px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.header{
+    width: 100%;
+    /* background-color: cornflowerblue; */
+    color: black;
+    height: 105px;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.header .head1{
+    width: 100%;
+    height: 80px;
+    /* background-color: violet; */
+}
+
+.head1 .logo{
+float: left;
+height: 70px;
+margin-left: 10px;
+margin-top: 10px;
+}
+.logo img{
+    height: 70px;
+}
+.head1 .head2{
+    float: left;
+    /* background-color: cyan; */
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.head1 .img-right{
+    float: right;
+}
+.img-right img{
+height: 70px;    
+margin:5px 5px;
+}
+.header .menu{
+    width: 100%;
+    background-color:rgb(18, 18, 76);
+    color: white;
+    height: 25px;
+}
+.menu ul{
+    list-style-type: none;   
+    width: 100%;
+}
+.menu ul li{
+    display: inline;
+    padding: 10px;
+} 
+.menu li a{
+    text-decoration: none;
+    color: white;
+}
+.container
+{
+    width: 100%;
+}
+.container .leftc{
+    width: 55%;
+    margin:10px 10px;
+    height: 300px;
+    height: 100%;
+    float: left;
+}
+.leftc p{
+    text-align: justify;
+}
+.container .rightc{
+    width: 40%;
+    /* background-color: rgb(197, 168, 225); */
+    margin:10px 10px ;
+    float: right;
+    text-align: justify;
+    height: 300px;
+}
+.rightc iframe{
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+}
+.page .footer{
+    width: 100%;
+    height: 20px;
+    text-align: center;
+}
+ .page .lastsec{
+    width: 100%;
+    background-color:black;
+    height: 500px; 
+}
+ins{
+    text-align: center;
+    text-decoration: none;
+}
+.one,.two,.three{
+    float: left;
+    width: 30%;
+    padding-top: 30px;
+    color: white;
+   }
+.one{
+    margin-left: 60px;
+} 
+.lastsec p{
+    padding-top: 10px;
+}
+.mcont{
+    width: 100%;
+    /* background-color: rgb(115, 198, 201); */
+    margin-bottom: 20px;
+}
+.leftc ul {
+    margin-left: 15px;
+    padding-top: 20px;
+}
+.leftc ul li{
+    margin-left: 20px;
+    padding-top: 10px;
+}
+.mcont .l{
+    float:left ;
+    width: 33%;
+}
+.mcont .m{
+    float:left ;
+    width: 33%;
+}
+.mcont .r{
+    float:left ;
+    width: 33%;
+}
+.mcont .l p{
+width: 100%;
+text-align: justify;
+}
+.mcont .l h3{
+    padding-top: 5px;
+    padding: 0px 10px;
+}
+.mcont .l p{
+    padding-left: 10px;
+}
+.mcont .m{
+    width: 33%;
+}
+.mcont .r{
+    width: 33%;
+    margin-top: 70px;
+   
+}
+.mcont .r img{
+    height: 100px;
+    width: 100px;
+    border-radius: 190px 190px;
+    margin-bottom: 10px;
+}
+.mcont .r #i1,#i2{
+width: 20px;
+height: 20PX;
+}
+
+.mcont .m{
+    background-color: aqua;
+}
+.lastsec .one #b1,#b2,#b3,#b4,#b5,#b6,#b7,#b8{
+    width: 65%;
+    height: 40px;
+    margin-top: 5px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+}
+#b1{
+    background-color: rgb(66, 66, 252);
+}
+#b2{
+    background-color: green;
+}
+#b3{
+    background-color: rgb(221, 59, 59);
+}
+#b4{
+    background-color: orangered;
+}
+#b5{
+    background-color: rgb(155, 154, 154);
+}
+#b6{
+    background-color: rgb(229, 229, 229);
+}
+#b6{
+    background-color: rgb(70, 168, 233);
+}
+#b7{
+    background-color: rgba(11, 186, 11, 0.852);
+}
+.lastsec .two ul{
+    margin-left: 10px;
+}
+.lastsec .two ul li{
+    padding-top:10px ;
+    font-size: 20px;
+    list-style-type:square;
+}
+.lastsec .three {
+  
+    height: 100%;
+}
+button:hover{
+    cursor: pointer;
+}
+ 
+#tb1{
+    width: 22%;
+    height: 120px;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 0px;
+    background-color: rgb(70, 168, 233);
+    color: white;
+}
+#tb2{
+    width: 22%;
+    height: 120px;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    margin-top: 42px;
+    margin-left: 3px;
+    margin-bottom: 0px;
+    background-color: green;
+    color: white;
+}
+#tb3{
+    width: 22%;
+    height: 120px;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    margin-top: 20px;
+    margin-left: 3px;
+   
+    background-color: rgb(221, 59, 59);
+    color: white;
+}
+#tb4{
+    width: 22%;
+    height: 120px;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    margin-top: 20px;
+    margin-left: 3px;
+   
+    background: orangered;
+    color: white;
+}

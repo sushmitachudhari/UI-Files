@@ -1,0 +1,443 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.box{
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+
+}
+.box .main-header{
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../images/meeting1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    object-fit: fill;
+    color: white;
+
+}
+.main-header .header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+}
+.header .logo{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 25%;
+    /* background-color: rgb(131, 167, 233); */
+    align-items: center;
+}
+.logo img{
+    height:7em;
+    width: 7em;
+}
+.header .menu{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    /* background-color: aquamarine; */
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3em;
+    font-weight: 500;
+}
+.menu ul{
+    list-style-type: none;
+    
+}
+.menu ul li{
+   
+    /* background-color: burlywood; */
+    display: inline-block;
+    margin: 0px 10px;
+}
+ul li a{
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s ease;
+}
+.menu ul li a:hover{
+    background-color: skyblue;
+}
+.header .contac{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 25%;
+    align-items: center;
+    justify-content:center; 
+    gap: 10px;
+}
+.contac img{
+    width: 20px;
+    height: 20px;
+    transition: all 0.5s ease-in;
+}
+.contac img:hover{
+   width: 30px;
+   height: 30px;
+   
+}
+
+.main-header .matter
+{
+    display: flex;
+    flex-direction: column;
+    margin: 100px 20%; 
+    align-items: center;
+    justify-content: center;
+    color: #e1e0e0;
+}
+.matter h1
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 5px 0px;
+}   
+.matter ins{
+    text-decoration: none;
+    color: rgb(96, 163, 250);
+    padding: 5px 0px;
+}
+.matter p{
+    text-align: center;
+    padding: 5px 0px;
+    font-family: Verdana, sans-serif;
+}
+.matter .b{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 8px 0px;
+    gap: 15px;
+}
+.b button{
+    padding: 6px 10px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid rgb(214, 211, 211);
+    transition: all 0.5s ease-in;
+}
+.b .btn1:hover{
+    background-color: rgb(11, 104, 155);
+    border: none;
+}
+.b .btn2{
+    background-color:rgb(11, 104, 155);
+    color: white;
+    border: none;
+}
+.b .btn2:hover{
+    background-color: transparent;
+    border: 1px solid rgb(214, 211, 211);
+}
+
+.box .services{
+    width: 100%;
+    min-height: 400px;
+    background-color: rgb(250, 246, 246);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.services .shead{
+    width: 100%;
+    min-height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.services .sbody{
+    width: 80%;
+    display: flex;
+    /* border: 3px  dotted green;
+    background-color: sandybrown; */
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    gap: 10px;
+}
+.sbody .col{
+     display: flex;
+     flex-direction: column;
+     flex-basis:25%;
+     background-color: rgb(237, 234, 234);
+     margin: 10px;
+     height: 100%;
+     border-radius: 5px;
+     align-items: center;
+     padding: 5px 5px;
+
+}
+.col img{
+    width: 100%;
+    height: 90px;
+   padding: 10px 20%;
+}
+.col ins{
+    text-decoration: none;
+    color:rgb(11, 104, 155);
+    font-weight: bold;
+    padding: 5px 5px;
+}
+.col p{
+    text-align: center;
+    padding: 5px 5px;
+}
+.col .colbtn{
+    padding: 5px 5px;
+    font-weight: 500;
+    border: none;
+    color: white;
+    background-color: rgb(11, 104, 155);
+    margin: 5px;
+    transition: all 0.5s ease-in;
+}
+.col .colbtn:hover{
+    background-color: transparent;
+    border: 1px solid rgb(15, 14, 14);
+    color: #303238;
+}
+.box .sliderd{
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sliderd ins{
+ text-decoration: none;
+ font-weight: lighter;
+ padding-bottom: 4px;
+
+}
+.sliderd .slider
+{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    min-height: 200px;
+    /* border:1px solid rgb(248, 76, 76); */
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to left,rgb(198, 198, 198),rgb(233, 233, 233));
+}
+.slider .txt{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 40%;
+    justify-content:center ;
+    align-items: start;
+    padding: 0px 70px;
+    height: 80%;
+}
+.txt ins p{
+   font-weight: bolder;
+}
+.txt ins{
+    text-decoration: none;
+    color: rgb(0, 98, 255);
+}
+.txt img{
+    width: 1.9em;
+
+}
+.slider .simg{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 60%;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.simg img{
+    height: 50%;
+    width: 50%;
+}
+.succes{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 300px;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rgb(243, 251, 253); */
+}
+.succes ins{
+    text-decoration: none;
+    font-weight: lighter;
+}
+.succes .sml{
+    font-weight: lighter;
+    font-size: 12px;
+}
+.succes .cn{
+    color: rgb(17, 117, 150);
+    font-weight: bold;
+    font-weight: 19px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.succes .cmt{
+ width: 80%;
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ justify-content: center;
+ gap: 5%;
+ /* border: 1px solid black; */
+ padding: 10px 10px;
+}
+.succes b{
+    color: crimson;
+    font-weight: bolder;
+}
+.cmt .com{
+    display: flex;
+    flex-direction:column;
+    flex-basis: 30%;
+    /* border: 1px solid black; */
+   background-color: rgb(246, 244, 244);
+   box-shadow: 0 4px 15px 0 rgba(204, 207, 206, 0.75);
+}
+.com .txtdiv{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    background-color:rgb(246, 252, 254);
+    padding: 4px 4px;
+    font-family:  sans-serif;
+    
+}
+.com .info{
+     display: flex;
+    flex-direction:row;
+    flex-basis: 30%;
+    height: 50%;
+    padding: 4px 4px;
+    justify-content: start;
+    align-items: center;
+    gap: 10%;
+}
+.info img{
+    display: flex;
+    height: 25%;
+    width: 25%;
+    margin-left: 20px;
+}
+.info .nam{
+    display: flex;
+    flex-direction:column;
+}
+.succes .cmtbtn{
+    padding: 8px 20px;
+    border: none;
+    background-color:rgb(11, 104, 155);
+    color: white;
+    margin: 4%;
+    border-radius: 5px;
+}
+.footer
+{
+    width: 100%;
+    min-height:300px;
+   background-color: #24262b;
+   display:flex; 
+   align-items: center;
+   justify-content: center;
+}
+.footer .row{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1px;
+   
+    padding: 20px;
+}
+.row .fcol{
+    display: flex;
+    flex-direction:column;
+    flex-basis: 25%;
+}
+.fcol h4{
+    color: white;
+    font-size: 18px;
+    text-transform:uppercase;
+    font-weight: 500;
+    margin-bottom: 30px;
+    position: relative;
+}
+ul li{
+    list-style: none;   
+}
+.fcol h4::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    width: 20%;
+}
+.fcol ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #bbbbbb;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: 0.3s ease;
+}
+.fcol ul  p{
+    color: #8a8a8a;
+}
+.fcol ul li a:hover{
+   color: white;
+   padding-left: 18px ;
+}
+.fcol .social-links a{
+    display: inline-block;
+    color: white;
+    height: 40px;
+    width: 40px;
+    margin: 0px 10px 10px 0px;
+    background-color: rgba(255,255,255,0.2);
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+}
+.fcol .social-links a:hover{
+    color:#24262b;
+    background-color: #fff;
+}
+.ftext{
+    display: flex;
+    flex-direction: column;
+    background-color: #303238;
+    width: 100%;
+    min-height: 40px;
+}
+.ftext p{
+    color: #e3e3e3;
+    text-align: center;
+    line-height: 40px;
+}

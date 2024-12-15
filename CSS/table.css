@@ -1,0 +1,68 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.box{
+    min-height: 600px;
+    width: 80%;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-image: url(/images/tbg.jpg);
+    background-repeat:  no-repeat;
+    object-fit: fill;
+    background-size: cover;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.box table{
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: auto;
+    margin-top: 0px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color: white;
+    transform: translate(-50%,-50%);
+    box-shadow: 1px 2px 6px 4px rgb(132, 131, 131);
+}
+.box table h3{
+    color:white;
+}
+
+
+.box table tr,th,td{
+    border: 1px solid rgb(255, 254, 254);
+  
+    padding: 10px;
+}
+.box table  h3{
+    padding-bottom: 20px;
+
+}
+.box table td img{
+    width: 60px;
+}
+.box table .r1{
+    background-color: rgb(12, 11, 11);
+    color: white;
+}
+.box table .r2{
+    background: none;
+   
+}
+.box table .r3{
+    background:none;
+}
+.box table .r4{
+    background: none;
+}
+.box table .r5{
+    background:none;
+
+}
+.box table .r6{
+    background:none;
+}

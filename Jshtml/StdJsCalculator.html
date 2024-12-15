@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stndard Calculator</title>
+    <link rel="stylesheet" href="/CSS/stdjscalculator.css">
+</head>
+<body>
+    <div class="box">
+        <center><p><h2>CALCULATOR</h2></p></center>
+        <div class="container">
+          <div class="iptr">
+            <input type="text" id="ip1" value=" " readonly>
+          
+          </div>
+          <div class="cbuttons">
+            <input type="button" class="op" id="c" value="C" onclick="ip1.value=''">
+            <input type="button" class="op" id="de" onclick="ip1.value= ip1.value.toString().slice(0,-1)" value="DE"> 
+            <input type="button" class="op" id="per" value="%" onclick="ip1.value+='%'">
+            <input type="button" class="op" id="divs" value="/" onclick="ip1.value+='/'">
+            <input type="button"  class="op" id="pow" value="^" onclick="ip1.value+='^'">
+            <input type="button" class="op" id="7"  value="7" onclick="ip1.value+='7'">
+            <input type="button"  class="op" id="8" value="8" onclick="ip1.value+='8'">
+            <input type="button"  class="op" id="9" value="9" onclick="ip1.value+='9'">
+            <input type="button"  class="op" id="mul" value="*" onclick="ip1.value+='*'">
+            <input type="button"  class="op" id="4" value="4" onclick="ip1.value+='4'">
+            <input type="button"  class="op" id="5" value="5" onclick="ip1.value+='5'">
+            <input type="button"  class="op" id="6" value="6" onclick="ip1.value+='6'">
+            <input type="button"  class="op" id="sub" value="-" onclick="ip1.value+='-'">
+            <input type="button"  class="op" id="1" value="1" onclick="ip1.value+='1'">
+            <input type="button"  class="op" id="2" value="2" onclick="ip1.value+='2'">
+            <input type="button"  class="op" id="3" value="3" onclick="ip1.value+='3'">
+            <input type="button"  class="op" id="pls" value="+"onclick="ip1.value+='+'">
+            <input type="button"  class="op" id="0" value="0" onclick="ip1.value+='0'">
+            <input type="button"  class="op" id="dot" value="." onclick="ip1.value+='.'">
+            <input type="button"  class="op" id="eql" value="=" onclick="ip1.value=eval(ip1.value)">
+          </div>
+        </div>
+    </div>
+</body>
+</html>

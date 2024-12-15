@@ -1,0 +1,147 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.box{
+   width: 100%;
+   height: 100%;
+   margin: auto;
+   padding: 100px;
+}
+.box h2{
+    text-align: center;
+    padding: 10px auto 10px auto;
+    margin-bottom:20px;
+ }
+.box #main-box{
+    width: 70%;
+    height: 65%;
+   /* border: 1px solid rgb(216, 214, 214); */
+    margin: auto;
+    padding: 5px;
+    box-shadow: 0px 4px 19px 0px lightgray;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+#main-box .in{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 70%;
+    /* border: 1px solid black; */
+}
+.in .la{
+    display: flex;
+    flex-direction: column;
+}
+.la .ldiv{
+    display: flex;
+    justify-content: space-between;
+}
+
+.ldiv #lmt,#yr,#ir{
+    border: 1px solid lightgray;
+    padding: 2px;
+    font-weight: bold;
+}
+.la #vol1,#vol2,#vol3{
+   margin: 5px 0px;
+   width: 100%;
+}
+.la .rval{
+    display: flex;
+    justify-content: space-between;
+  
+}
+.la label{
+    font-size: 12px;
+    color: rgb(54, 53, 53);
+}
+#main-box .out{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 25%;
+}
+/* .btn1{
+    padding: 10px;
+    margin: 100px;
+    border: none;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+} */
+ .out .mhlemi {
+    padding-left: 2px;
+    margin-bottom: 10px;
+ }
+ .mhlemi label{
+    font-size: 10px;
+    font-weight: 300;
+ }
+ .mhlemi #em{
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(48, 48, 254);
+ }
+ .mhlemi a{
+    text-decoration: none;
+    font-size: 10px;
+    color: rgb(48, 48, 254);
+ }
+ .out .pa{
+    padding-left: 2px;
+    margin-bottom: 10px;
+ }
+ .pa label{
+    font-size: 10px;
+    font-weight: 300;
+ }
+ .pa #pam{
+    font-size: 15px;
+    font-weight: bold;
+ }
+ .out .iamt{
+    padding-left: 2px;
+    margin-bottom: 10px;
+ }
+ .iamt label{
+    font-size: 10px;
+    font-weight: 300;
+ }
+ .iamt #pia{
+    font-size: 15px;
+     font-weight: bold;
+ }
+ .out .tap{
+    padding-left: 2px;
+    margin-bottom: 10px;
+ }
+ .tap label{
+    font-size: 10px;
+    font-weight: 300;
+ } 
+ .tap #pip{
+    font-size: 15px;
+    font-weight: bold;
+ }
+ .out .exp{
+    padding-left: 2px;
+ }
+ .exp label{
+    font-size: 10px;
+    font-weight: 300;
+    color: rgb(80, 78, 78);
+ }
+ .exp #eid{
+    padding: 3px;
+    font-size: 12px;
+    font-weight: 300;
+    border: none;
+    background-color: rgb(48, 48, 254);
+    color: white;
+    margin-bottom: 2px;
+    border-radius: 2px;
+ }

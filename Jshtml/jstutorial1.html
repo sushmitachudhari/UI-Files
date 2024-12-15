@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+        .box{
+            width: 500px;
+            min-height: 300px;
+            margin: 100px auto;
+            border: 1px solid gray;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            background-color:lightpink ;
+        }
+        .box input{
+            width: 95%;
+            padding: 10px 10px;
+            outline: none;
+            margin: 10px;
+        }
+        .two{
+            margin-top: 10px;
+        }
+        .box button{
+            width: 95%;
+            margin: 10px;
+            padding: 10px 10px;
+            font-size: 17px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- <script type="text/javascript">
+         var a=100;
+         document.write(typeof(a)+"<br>");
+         a="good";
+         document.write(typeof(a)+"<br>");
+         a=true;
+         document.write(typeof(a)+"<br>");
+    </script> -->
+    <!-- <script type="text/javascript">
+        let a=100;
+        let b=200;
+        let c=a+b;
+        document.write("Addition of "+a+" and "+b+" is ..."+c);
+    </script> -->
+    <!-- <script type="text/javascript">
+        const a=400;
+        const b=200;
+        var d;
+        document.write("Addition is "+(a+b));
+        document.write(d);//undefind print hoil
+    </script> -->
+    <!-- <script type="text/javascript">
+         //find the greatest number
+         var a=12,b=15;
+         if(a>b)
+         {
+           document.write("a is greater "+a);
+         }
+         else
+         {
+            console.log("b is greater "+b);//console output
+         }
+    </script> -->
+
+    <!-- <script type="text/javascript">
+        var no=5;
+        document.write("Table of 5 is...<br>");
+        for(var i=1;i<=10;i++)
+       {
+         document.write("<br>"+no+" * "+i+"="+(5*i));
+       }
+    </script> -->
+    <!-- <script type="text/javascript">
+        var base=2,index=3,p=1;
+        var i=1;
+        while(i<=index)
+    {
+        p=p*base;
+        i++;
+    }
+    document.write("power of "+base+" and "+index+" is "+p);
+     </script> -->
+
+     <!-- <script type="text/javascript">
+        var no=151;
+        var temp=no;
+        var rev=0,rem;
+        while(no>0)
+       {
+        rem= no % 10;
+        rev=rev*10+rem; 
+        no=no/10;
+       }
+      if(rev==temp)
+      {
+         document.write(temp+" number is palindrome ");
+      }
+      else{
+         document.write(temp+" number is not palindrome ")
+      }
+     </script> -->
+     <script type="text/javascript">
+        function calAdd()
+        {
+           var one=parseInt(document.getElementById("one").value);
+           var two=parseInt(document.getElementById("two").value);
+           var answ=document.getElementById("ans");
+           var sum=one+two;
+        //  alert("Addition is"+(sum));
+           answ.value=" "+sum;
+        }
+        function calSub()
+        {
+          var one=parseInt(document.getElementById("one").value);
+          var two=parseInt(document.getElementById("two").value);
+          var answ=document.getElementById("ans");
+          var sub=one-two;
+          answ.value=" "+sub;
+
+        }
+        function display()
+        {
+          var one=parseInt(document.getElementById("one").value);
+          var two=parseInt(document.getElementById("two").value);
+          var add=one+two;
+          var sub=one-two;
+          alert("num1="+one+"num2="+two+" Addition is"+add+"Substraction is "+sub)       
+        }
+     </script>
+     <div class="box">
+       <form >
+        <input type="text" id="one" value="" placeholder="Enter First Value..">
+        <input type="text" id="two" value="" placeholder="Enter Second Value..">
+        <input type="text" id="ans" value="" placeholder="Answer..">
+        
+        <button type="button" onclick="calAdd()">Addition</button>
+        <button type="button" onclick="calSub()">Substraction</button>
+        <button type="button" onclick="display()">Display</button>
+       
+       </form>
+     </div>
+</body>
+</html>

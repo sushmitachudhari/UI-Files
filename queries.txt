@@ -1,0 +1,121 @@
+ select * from Team where Salary>=30000 and Run_Record>=100 order by salary desc;
+
+ select * from Team where State!='Maharashtra' and State!='Panjab';
+
+select * from Team where State not in ('Maharashtra','Panjab','Gujrat');
+
+ Select count(name) from Company;
+
+select count(name) from company where salary between 3000 and 20000;
+
+ select name from Company where not name in('ram','rupali') or salary between 3000 and 20001;
+
+select count(name) from Company where not name in('ram','rupali') and salary between 3000 and 20001;
+
+select sum(salary) from company;
+
+ select count(name) from company where name!='Hyram' and name!='radha';
+
+ select min(salary) from Company;
+
+ select avg(salary) from Company;
+
+create table Student(Sid int(5) primary Key auto_increment,Name varchar(50) not null,Email varchar(20) not null unique,Contact varchar(10) not null unique,Age int(3) check(Age>6) ,State varchar(30) default 'Maharashtra');
+
+
+ select name, count(*) from company group by name;
+
+ select salary,count(*) from company group by salary;
+
+ select name,count(*) from company group by name having count(name)>1;
+
+
+
+DAY 4 DIWALIREVISION PDF SQL QUERIES
+1. select name,bookissued from member ;
+2. select * from book where title='abcd';
+3. select title ,copyavl from book;
+
+DAY 5
+1.update member set email='cb@gmail.com' where mid=3;
+2. select * from member where mdate like '2023%';
+
+Day 6
+ create table course1(cid int(5) primary key,cname varchar(30),instructor varchar(30),credits int(5));
+
+ create table stud1(sid int(5) primary key,sname varchar(30),age int(5),gradelevel varchar(10));
+
+ create table enrollment(eid int(5) primary key,sid int(5),cid int(5),enrolldate varchar(20),GradeLevel varchar(10),foreign key(cid) references course1(cid),foreign key(sid) references stud1(sid));
+
+1.  select c.cname as Course,c.instructor ,s.sid,s.sname,s.age,s.gradelevel from course1 c inner join enrollment e on c.cid=e.cid inner join stud1 s on s.sid=e.sid;
+
+2. select s.sname as 'Student name' ,c.cname as 'Course' ,e.gradelevel from course1 c inner join enrollment e on c.cid=e.cid inner join stud1 s on s.sid=e.sid  where c.cname='Mathematics';
+
+3. select s.sname as 'StudentName' ,c.cname as 'CourseName' ,e.enrolldate from course1 c inner join enrollment e on c.cid=e.cid inner join stud1 s on s.sid=e.sid; 
+
+DAY 7
+1. select avg(s.age) ,c.cname as 'Course' from course1 c inner join enrollment e on c.cid=e.cid inner join stud1 s on s.sid=e.sid group by c.cname;
+
+2. select  count(e.sid),c.cname from course1 c Left join enrollment e on c.cid=e.cid group by c.cname having count(e.sid)<1; ---OR--- select c.cid,c.cname as 'Course' ,c.instructor ,credits from course1 c left join enrollment e on c.cid=e.cid where e.cid IS NULL;
+  
+3. select s.sname as 'StudentName' ,c.cname as 'Course' from course1 c inner join enrollment e on c.cid=e.cid inner join stud1 s on s.sid=e.sid where Grade='A';
+
+DAY 8
+1. select s.sname as 'Student' ,c.cname  as 'Course',c.credits from course1 c inner join enrollment e on c.cid = e.cid inner join stud1 s on s.sid = e.sid ;
+
+2. select count(s.sname) ,c.cname as 'Course' from course1 c inner join enrollment e on c.cid=e.cid inner join stud1 s on s.sid=e.sid group by cname;
+
+3. select s.sname as 'Student' ,c.cname as 'Course' from course1 c inner join enrollment e on c.cid=e.cid right join stud1 s on s.sid=e.sid ;
+
+DAY 9
+1. select s.sname as 'Student',c.cname as 'course' ,e.grade from course1 c inner join enrollment e on c.cid=e.cid inner join stud1 s on s.sid=e.sid where c.instructor='Dr.Roberts';
+
+2.
+
+3. select  count(e.cid),s.sname as 'Course'  from stud1 s inner join enrollment e on s.sid=e.sid inner join course1 c on c.cid=e.cid  group by s.sname having count(e.cid)>1;
+
+DAY 10
+1.select s.sid,s.sname as 'Student',s.age,s.gradelevel ,c.cname as 'Course'  from stud1 s inner join enrollment e on s.sid=e.sid inner join course1 c on c.cid=e.cid where c.cname !='science';
+
+2. select s.sname as 'Student',c.cname as 'Course' ,c.instructor,s.gradelevel from stud1 s inner join enrollment e on s.sid=e.sid inner join course1 c on c.cid=e.cid  where s.gradelevel='10th';
+
+3.select s.sname as 'Student' ,sum(c.credits) from Stud1 s inner join enrollment e on s.sid=e.sid inner join course1 c on c.cid=e.cid group by s.sname;
+
+
+Last example from Diwali file
+
+ create table customer(cid int(5) primary key,cname varchar(25), email varchar(25) ,city varchar(20));
+
+ create table product(pid int(5) primary key,pname varchar(30),category varchar(40),price int (7));
+
+create table orders(oid int(5) primary key,cid int(5),pid int(5), ordate varchar(15),quantity int(5), foreign key(cid) references customer(cid),foreign key(pid) references product(pid));
+
+1. select c.cname as 'Customer' ,p.pname as 'Product' ,p.price from customer c inner join orders o on c.cid=o.cid inner join product p on p.pid=o.pid where price >500;
+
+2. select pname as 'Product' ,price from product where price=(select max(price) from product);
+
+3. select *from orders where quantity>(select avg(quantity) from orders); 
+
+4. select * from customer c left join orders o on c.cid=o.cid where o.oid IS NULL;
+
+5. select * from product where category=(select category from product where pname='Laptop') and pname !='laptop';  ---OR---  select * from product where category=(select category from product where pname='Laptop');
+
+6. select cname as 'Customer ',email as 'EMAIL' from customer c inner join orders o on c.cid=o.cid inner join product p on p.pid=o.pid where p.pname='camera';
+
+7. select * from orders order by ordate desc limit 1;
+
+8. select * from product where price <(select avg(price) from product);
+
+9. select * from customer where city =(select city from customer where cname='Alice Johnson') and cname !='Alice Johnson'; ---OR--- select * from customer where city =(select city from customer where cname='Alice Johnson');
+
+10. select p.pname as 'Product' from product p inner join orders o on p.pid=o.pid inner join customer c on c.cid = o.cid where c.cname='Bob Smith';
+
+11. select sum(o.quantity), p.pname from Orders o inner join product p on o.pid=p.pid group by p.pname having sum(o.quantity)>(select avg(quantity) from orders);
+
+12.
+
+13. select c.cname as 'Customer' from customer c inner join orders o on c.cid=o.cid where ordate='2024-01-10';
+
+14.  select c.city from customer c inner join orders o on c.cid=o.cid inner join product p on p.pid=o.pid  where p.price>400;
+
+15. select p.pname as 'Product' from product p inner join orders o on p.pid=o.pid inner join customer c on o.cid=c.cid where c.city='Los Angeles';

@@ -1,0 +1,154 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.page{
+    border: 1px solid black;
+    width: 80%;
+    min-height: 200px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.header{
+    width: 100%;
+    /* background-color: cornflowerblue; */
+    color: black;
+    height: 100px;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.header .head1{
+    width: 100%;
+    height: 80px;
+    /* background-color: violet; */
+}
+
+.head1 .logo{
+float: left;
+height: 70px;
+margin-left: 10px;
+margin-top: 10px;
+}
+.logo img{
+    height: 70px;
+}
+.head1 .head2{
+    float: left;
+    /* background-color: cyan; */
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.head1 .img-right{
+    float: right;
+}
+.img-right img{
+height: 70px;    
+margin:5px 5px;
+}
+.header .menu{
+    width: 100%;
+    background-color:rgb(18, 18, 76);
+    color: white;
+    height: 20px;
+}
+.menu ul{
+    list-style-type: none;   
+    width: 100%;
+}
+ul li{
+    display: inline;
+    padding: 10px;
+} 
+li a{
+    text-decoration: none;
+    color: white;
+}
+.page .headline{
+    width: 100%;
+    height: 20px;
+    background-color: lightskyblue;
+}
+.container
+{
+    width: 100%;
+}
+.container .leftdiv{
+    width: 55%;
+    margin:10px 10px ;
+    /* background-color: aquamarine; */
+    height: 100%;
+    float: left;
+}
+.leftdiv img{
+    width:100%;
+   
+    
+}
+.container .rightdiv{
+    width: 40%;
+    /* background-color: rgb(197, 168, 225); */
+    margin:10px 10px ;
+    float: right;
+    text-align: justify;
+}
+.rightdiv h3{
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.rightdiv p{
+    padding: 5px 5px;
+}
+.page .footer{
+    width: 100%;
+    height: 20px;
+   background-color: rgb(23, 8, 137);
+    color:white;
+    text-align: center;
+}
+.lastsec{
+    width: 100%;
+    background-color:rgb(87, 87, 87);
+    height: 200px;
+}
+ins{
+    text-align: center;
+    color: rgb(25, 193, 240);
+    text-decoration: none;
+    color: solid black;
+    
+}
+.info, .service,.company,.subscribe{
+    float: left;
+    width: 25%;
+    padding-top: 30px;
+    color: white;
+}
+.info{
+    padding-left:10px ;
+}
+.lastsec p{
+    padding-top: 10px;
+}
+#sid{
+    height: 20px;
+    margin-top: 10px;
+    border-radius: 3px;
+    outline: none;
+    border:gray;
+}
+#sbtn{
+    background-color: black;
+    color: white;
+    width: 70px;
+    height: 23px;
+    border-radius: 3px;
+   margin-top: 10px;
+}
+.info img{
+    width: 60px;
+}

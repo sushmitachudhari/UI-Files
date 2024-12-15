@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home EMI Calculater</title>
+    <link rel="stylesheet" href="/CSS/emi.css">
+    <script type="text/javascript" src="/JS/emi.js">
+
+        // function applyFunction()
+        // {
+        //     let head=document.getElementById("main-box");
+        //     head.style.backgroundColor="white";
+        //     head.style.color="green";
+        //     head.style.width="60%";
+        //     head.style.padding="10px";
+        //     head.style.borderRadius="10px";
+        //     head.style.borderStyle="dotted";
+
+        // }
+
+    </script>
+    
+</head>
+<body>
+    <div class="box">
+        <!-- <center>
+            <input type="button" class="btn1" name="s" value="Open to view EMI Calculator" onclick="applyFunction()" />
+        </center>
+            <div id="main-box">
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo labore, minima quod quis voluptates consequuntur veniam molestias sapiente rerum natus!</p>
+            </div> -->
+                   <h2>HOME EMI CALCULATOR</h2>
+            <div id="main-box">
+             <div class="in">
+              <br>
+              <div class="la">
+                 <div class="ldiv">
+                    <label>Loan Amount</label>
+                    <label id="lmt">Rs.100000</label>
+                 </div>
+                 <div class="r">
+                    <input type="range" id="vol1" name="vol" value="0" min="100000" max="100000000" onclick="getLoanAmt()">
+                 </div>
+                   <div class="rval">
+                    <label>Rs.1Lac</label>
+                    <label>Rs.10Cr</label>
+                 </div>
+              </div>
+                <br>
+              <div class="la">
+                <div class="ldiv">
+                   <label>Tenure(Years)</label>
+                   <label id="yr">1 yr</label>
+                </div>
+                <div class="r">
+                   <input type="range" id="vol2" name="vol" value="0" min="1" max="30" onclick="getyears()">
+                </div>
+                <div class="rval">
+                   <label>1</label>
+                   <label>30</label>
+                </div>
+             </div>
+              <br>
+             <div class="la">
+                <div class="ldiv">
+                   <label>Interest Rate(% P.A.)</label>
+                   <label id="ir">0.5 %</label>
+                </div>
+                <div class="r">
+                   <input type="range" id="vol3" value="0" name="vol" min="0.5" max="15" onclick="getinterest()">
+                </div>
+                <div class="rval">
+                   <label>0.5</label>
+                   <label>15</label>
+                </div>
+             </div>
+
+             </div>
+             <div class="out">
+
+              <div class="mhlemi">
+               <label>Monthly Home Loan EMI</label>
+               <p id="em">Rs.000000</p> <a href="#">View Details</a>
+              </div>
+              <div class="pa">
+               <label>Principle Amount</label>
+               <p id="pam">Rs.0000000</p>
+              </div>
+
+              <div class="iamt">
+               <label>Interest Amount</label>
+               <p id="pia">Rs.0000000</p>
+              </div>
+
+              <div class="tap">
+               <label>Total Amount Payable</label>
+               <p id="pip">Rs.0000000</p>
+              </div>
+
+               <div class="exp">
+                <label>Need More Information?</label>
+
+                <input type="button" id="eid" value="Talk to Our Loan Expert">
+               </div>
+
+             </div>
+
+            </div>
+    </div>
+</body>
+</html>

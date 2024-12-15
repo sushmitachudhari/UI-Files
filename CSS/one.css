@@ -6,8 +6,8 @@
 }
 .container{
     border: 1px solid black;
-    min-height: 100px;
-    width: 60%;
+    min-height: 300px;
+    width: 80%;
     margin: auto;
 }
 .header{
@@ -25,4 +25,8 @@
  h1{
     float:left;
   
+}
+.container .slider
+{
+    width: 100%;
 }

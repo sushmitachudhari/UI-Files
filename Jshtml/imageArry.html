@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Capcha</title>
+    
+    <script type='text/javascript'>
+         var s=document.getElementById("images");
+         s.style.display="none";
+         var ans;
+         var arry;
+        function addimg(ele)
+        {                
+           ans=document.createElement("img");
+           ans.setAttribute("src",ele);
+           ans.style.width="100px";
+           ans.style.height="100px";
+         arry.push(ele.toString());
+        }
+        function show()
+        {
+         
+         for(var i=0;i<arry.length();i++)
+         {
+            images.append(arry.pop(arry[i]));
+         }
+          //images.append(ans);
+          s.style.display="grid";
+        
+        }
+        
+    </script>
+    <style>
+      *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      body{
+        display: flex;
+       
+        width: 90%;
+        height: 90%;
+        margin: auto;
+        flex-direction: row;
+        padding-top: 20px;
+      }
+      #c{
+        display: flex;
+        flex-basis: 50%;
+        flex-direction: column;
+      }
+      #c p{
+        padding: 5px;
+        margin: 10px;
+        color: Red;
+        
+      }
+      #c .box{
+        display: grid;
+        width:311px;
+        min-height: 300px;
+        grid-template-columns:repeat(3,1fr);
+        grid-template-rows:100px 100px 100px ;
+        border: 1px solid black;
+        grid-gap: 5px;
+      }
+      .box img{
+        width: 100px;
+        height: 100px;
+      }
+      #d{
+        display: flex;
+        flex-basis: 50%;
+        flex-direction: column;
+      }
+      #d #btn{
+        padding: 10px;
+        margin: 0px 100px;
+      }
+    </style>
+</head>
+<body>
+   <div id="c">
+    <left><p>Select Images from below</p></left>
+     <div class="box" >
+     <a class="im"><img src="/images/mi1.jpg" id="1" onclick="addimg(this.src)"></a>
+      <a class="im"><img src="/images/mi2.jpg" id="2" onclick="addimg(this.src)"></a>
+      <a class="im"><img src="/images/mi3.jpg" id="3" onclick="addimg(this.src)"></a>
+      <a class="im"><img src="/images/mi4.jpg" id="4" onclick="addimg(this.src)"></a>
+      <a class="im"><img src="/images/bg.jpg"  id="5" onclick="addimg(this.src)"></a>
+      <a class="im"><img src="/images/travel.jpg" id="6" onclick="addimg(this.src)"></a>
+      <a class="im"><img src="/images/travelbg.jpg" id="7" onclick="addimg(this.src)"></a>
+      <a class="im"><img src="/images/travel1.jpg"  id="8" onclick="addimg(this.src)"></a>
+      <a class="im"><img src="/images/mi2.jpg" id="9" onclick="addimg(this.src)"></a>
+    </div>
+  </div>
+  <div id="d">
+      <button id="btn" onclick="show()">Show Selected Images</button>
+      <div id="images"></div>
+  </div>
+  </div>
+  
+</body>
+</html>
